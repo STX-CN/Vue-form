@@ -10,20 +10,20 @@
 
 <body>
     <div id="root">
-        <input type="radio" id="jack" value="Jack" v-model="picked">
-        <label for="jack">Jack</label>
-        <input type="radio" id="jhon" value="Jhon" v-model="picked">
-        <label for="jhon">Jhon</label>
-        <input type="radio" id="bruce" value="Bruce" v-model="picked">
-        <label for="bruce">Bruce</label>
+        <select v-model="selected">
+            <option disabled value="">who is hero?</option>
+            <option>wxy</option>
+            <option>xgq</option>
+            <option>pikq</option>
+        </select>
         <br>
-        <span>Checked names: {{ picked }}</span>
+        <span>Checked names: {{ selected }}</span>
     </div>
     <script>
         new Vue({
             el: '#root',
             data: {
-                picked: ''
+                selected: ''
             },
             methods: {}
         })
