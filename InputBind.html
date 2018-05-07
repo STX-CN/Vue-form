@@ -15,6 +15,13 @@
         </select>
         <br>
         <span>Checked names: {{ selected }}</span>
+
+        <input v-model.number="age" type="number">
+        <br/>
+        <span>age: {{age}}</span>
+        <input v-model.trim="msg">
+        <br/>
+        <span>msg: {{msg}}</span>
     </div>
     <script>
         new Vue({
@@ -30,7 +37,9 @@
                 }, {
                     text: 'three',
                     value: 'C'
-                }]
+                }],
+                age: 0,
+                msg: ''
             },
             methods: {}
         })
