@@ -10,7 +10,7 @@
 
 <body>
     <div id="root">
-        <select v-model="selected">
+        <select v-model="selected" multiple style="width:50px;">
             <option disabled value="">who is hero?</option>
             <option>wxy</option>
             <option>xgq</option>
@@ -23,7 +23,7 @@
         new Vue({
             el: '#root',
             data: {
-                selected: ''
+                selected: []
             },
             methods: {}
         })
