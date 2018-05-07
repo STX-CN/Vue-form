@@ -10,8 +10,11 @@
 
 <body>
     <div id="root">
-        <input v-model="message">
-        <p>Message is: {{message}}</p>
+        <span>Multiline message is:</span>
+        <p style="white-space: pre-line;">{{ message }}</p>
+        <br>
+        <br>
+        <textarea v-model="message" placeholder="add multiple lines"></textarea>
     </div>
     <script>
         new Vue({
