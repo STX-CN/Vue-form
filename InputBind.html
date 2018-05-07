@@ -10,14 +10,20 @@
 
 <body>
     <div id="root">
-        <input type="checkbox" id="checkbox" v-model="checked">
-        <label for="checkbox">{{checked}}</label>
+        <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+        <label for="jack">Jack</label>
+        <input type="checkbox" id="jhon" value="Jhon" v-model="checkedNames">
+        <label for="jhon">Jhon</label>
+        <input type="checkbox" id="bruce" value="Bruce" v-model="checkedNames">
+        <label for="bruce">Bruce</label>
+        <br>
+        <span>Checked names: {{ checkedNames }}</span>
     </div>
     <script>
         new Vue({
             el: '#root',
             data: {
-                checked: false
+                checkedNames: []
             },
             methods: {}
         })
